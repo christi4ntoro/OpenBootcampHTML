@@ -1,0 +1,25 @@
+.btn-modern {
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+    transition: color .4s ease-in-out .5s;
+}
+.btn-modern:hover {
+    animation: moveit .4s ease-in-out forwards;
+    background-color: rgb(67, 18, 112);
+    color: yellowgreen;
+}
+
+@keyframes moveit {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
